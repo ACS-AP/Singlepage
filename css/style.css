@@ -1,0 +1,414 @@
+* {
+  font-size: 100%;
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  height: 100vh;
+  overflow-x: hidden;
+  background: rgb(0, 0, 0);
+}
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+h1 {
+  font-size: 70px;
+  text-align: center;
+}
+h2 {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+p {
+  font-size: 14.5px;
+  line-height: 1.4em;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.nav-links .current {
+  background: #49505f;
+}
+
+.h1,
+.h2,
+.h3,
+h1,
+h2,
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* smooth scrolling */
+#section2,
+#section4 {
+  padding-top: 75px;
+  margin-top: -75px;
+  background-clip: content-box;
+}
+
+/* nav section */
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background: #020113;
+  min-height: 40px;
+  width: 100%;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links li {
+  padding: 10px;
+}
+.nav-links a {
+  display: block;
+  text-align: center;
+  background: #040916;
+  border: 1px solid #121e33;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+ul li.active a,
+ul li a:focus,
+ul li a:hover,
+.navbar-toggle:hover {
+  background: #49505f;
+}
+
+.all {
+  display: none;
+}
+
+.navbar-toggle {
+  background: #333;
+  position: relative;
+  float: right;
+  padding: 5px 7px 9px 7px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  margin: 8px 20px 8px;
+  cursor: pointer;
+  outline: none;
+  z-index: 10;
+}
+
+.icon-bar {
+  display: block;
+  width: 22px;
+  height: 1px;
+  border-radius: 1px;
+  background-color: #f1f1f1;
+  margin-top: 4px;
+  padding: 1px 5px;
+  transition: all 0.3s ease;
+}
+
+/* Start Main Menu */
+
+#header-area {
+  background: url(../img/o2.jpeg) no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  padding: 235px 0;
+  text-align: center;
+  height: 615px;
+  z-index: -2;
+}
+
+#header-area h1 {
+  color: #333;
+  font-size: 70px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+#header-area h4 {
+  color: #333;
+  font-size: 25px;
+  font-weight: 400;
+}
+/* End Header CSS */
+
+/* Start Feature CSS */
+#feature-area {
+  padding-top: 70px;
+  background: #000109;
+}
+
+#feature-area .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature-content {
+  margin: 0 15px;
+  padding-bottom: 40px;
+  overflow: hidden;
+  text-align: center;
+  max-width: 30%;
+  background: #a7a2b6;
+}
+
+.feature-content a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+.feature-content-title {
+  padding: 10px 135px;
+  text-align: left;
+}
+.feature-content-description {
+  padding: 0 20px 35px;
+  text-align: left;
+  margin-top: 12px;
+}
+
+.feature-button {
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+
+  transition: all 0.3s ease;
+  text-align: center;
+  position: relative;
+
+  background: #000000;
+}
+
+.feature-button:link,
+.feature-button:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.purple-text {
+  color: #591a7e;
+}
+
+/* End Feature CSS */
+
+/* Start Blog CSS */
+
+#info .container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.info-content {
+  display: inline-block;
+  background: #a7a2b6;
+  margin: 0 15px;
+  padding-bottom: 40px;
+  max-width: 555px;
+}
+.info-content h2 {
+  color: #591a7e;
+}
+.info-content p {
+  padding: 27px;
+  color: #393636;
+}
+.info-content span {
+  float: right;
+  margin-right: 3rem;
+}
+
+
+#interesting h1 {
+  font-size: 50px;
+  font-weight:bolder;
+  margin-bottom: 60px;
+  color: rgb(101, 73, 130);
+  float: left;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* End Services CSS */
+
+/* Start Testimonial CSS */
+#astro-area {
+  margin: 60px 0;
+  background: rgb(0, 0, 0);
+}
+
+#astro-area .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+
+h2 {
+  color: #591a7e;
+}
+.astro-content {
+  background-color:#a7a2b6;
+  height: 510px;
+  max-width: 260px;
+  margin: 0 15px 30px 15px;
+  text-align: center;
+}
+.astro-content p {
+  padding: 10px 20px;
+  text-align: left;
+}
+.content-link {
+  background: #fff;
+  border: 1px solid #cdcdcd;
+  border-radius: 10px;
+  color: #666;
+  display: inline-block;
+  font-size: 18px;
+  padding: 10px 30px;
+  text-decoration: none;
+  text-transform: capitalize;
+  margin-top: 15px;
+
+  transition: all 0.3s ease;
+}
+.content-link:hover,
+.content-link:focus {
+  background: #e6e6e6;
+}
+
+.galaxy-box {
+  width: 100%;
+  margin: 0 15px;
+  background: #a7a2b6;
+}
+
+.galaxy-box-description {
+  padding: 30px;
+  text-align: left;
+}
+.galaxy-box-description h2 {
+  text-align: left;
+}
+/* End Testimonial CSS */
+
+/* Start Contact CSS */
+#contact-area {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#contact-area .container {
+  display: flex;
+  flex-direction: column;
+  max-width: 750px;
+}
+
+.contact-section {
+  height: 100%;
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+#contact-area h1 {
+  font-size: 40px;
+  font-weight: 400;
+  color: rgb(87, 77, 193);
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+}
+
+.form-left {
+  padding-right: 15px;
+  width: 50%;
+  display: flex;
+  height: auto;
+  flex-flow: column wrap;
+}
+.form-right {
+  padding-left: 15px;
+  margin-bottom: 15px;
+  width: 50%;
+  display: flex;
+  height: auto;
+  flex-flow: column wrap;
+}
+
+.form-control {
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: none;
+  background: rgba(87, 107, 162, 0.4);
+  transition: ease-in-out 0.20s;
+  outline: none;
+}
+
+
+
+input {
+  margin-bottom: 15px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgb(87, 77, 193)
+}
+
+textarea {
+  height: auto;
+  resize: none;
+  overflow: auto;
+}
+
+.form-right button {
+  width: 30%;
+  background: rgb(87, 77, 193);
+  color:white;
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 12px;
+}
+
